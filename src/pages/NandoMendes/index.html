@@ -7,8 +7,7 @@
     <title>Nando Mendes - Página Inicial</title>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="./public/
-css/global.css" />
+    <link rel="stylesheet" href="../../../public/css/global.css" />
     <link rel="stylesheet" href="index.css" />
 </head>
 
@@ -16,8 +15,7 @@ css/global.css" />
     <!-- MENU SUPERIOR -->
     <header class="header">
         <div class="container nav-container">
-            <img src="./public/
-images/nando_logo.png" alt="Logo Nando Mendes" class="logo">
+            <img src="../../../public/images/nando_logo.png" alt="Logo Nando Mendes" class="logo">
             <nav class="menu">
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -33,8 +31,7 @@ images/nando_logo.png" alt="Logo Nando Mendes" class="logo">
     <!-- APRESENTAÇÃO -->
     <main class="container">
         <section class="apresentacao">
-            <img src="./public/
-images/foto-destaque.jpg" alt="Nando Mendes" class="foto-perfil">
+            <img src="../../../public/images/foto-destaque.jpg" alt="Nando Mendes" class="foto-perfil">
             <div class="texto-apresentacao">
                 <h2>Apresentação</h2>
                 <p>Sou Nando Mendes, cantor, compositor e músico com mais de 20 anos de missão na música católica. Autor
@@ -50,27 +47,26 @@ images/foto-destaque.jpg" alt="Nando Mendes" class="foto-perfil">
                     title="YouTube video player" frameborder="0" allowfullscreen></iframe>
             </div>
         </section>
+        
+<!-- FORMULÁRIO DE CONTATO -->
+<section class="contato">
+  <div class="contato-container">
+    <h2>Convide Nando Mendes para o seu evento</h2>
+    <form class="formulario-contato" action="#" method="POST">
+      <label for="nome">Nome</label>
+      <input type="text" id="nome" name="nome" placeholder="Seu nome" required />
 
-        <!-- FORMULÁRIO DE CONTATO -->
-        <section class="contato">
-            <div class="contato-container">
-                <h2>Convide Nando Mendes para o seu evento</h2>
-                <form class="formulario-contato" action="#" method="POST">
-                    <label for="nome">Nome</label>
-                    <input type="text" id="nome" name="nome" placeholder="Seu nome" required />
+      <label for="email">E-mail</label>
+      <input type="email" id="email" name="email" placeholder="Seu e-mail" required />
 
-                    <label for="email">E-mail</label>
-                    <input type="email" id="email" name="email" placeholder="Seu e-mail" required />
+      <label for="mensagem">Mensagem</label>
+      <textarea id="mensagem" name="mensagem" rows="5" placeholder="Digite sua mensagem" required></textarea>
 
-                    <label for="mensagem">Mensagem</label>
-                    <textarea id="mensagem" name="mensagem" rows="5" placeholder="Digite sua mensagem"
-                        required></textarea>
-
-                    <button type="submit">Enviar</button>
-                </form>
-            </div>
-        </section>
-
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+</section>
+        
 
     </main>
 
@@ -78,19 +74,16 @@ images/foto-destaque.jpg" alt="Nando Mendes" class="foto-perfil">
     <footer class="footer">
         <p>Siga Nando Mendes nas redes sociais:</p>
         <div class="social-icons">
-            <a href="https://www.youtube.com/@NandoMendes" target="_blank"><img src="./public/
-images/youtube.png" alt="YouTube" /></a>
-            <a href="https://www.instagram.com/eunandomendes/" target="_blank"><img src="./public/
-images/instagram.png" alt="Instagram" /></a>
-            <a href="https://www.facebook.com/cantornandomendes" target="_blank"><img src="./public/
-images/facebook.png" alt="Facebook" /></a>
+            <a href="https://www.youtube.com/@NandoMendes" target="_blank"><img src="../../../public/images/youtube.png"
+                    alt="YouTube" /></a>
+            <a href="https://www.instagram.com/eunandomendes/" target="_blank"><img
+                    src="../../../public/images/instagram.png" alt="Instagram" /></a>
+            <a href="https://www.facebook.com/cantornandomendes" target="_blank"><img
+                    src="../../../public/images/facebook.png" alt="Facebook" /></a>
             <a href="https://open.spotify.com/artist/1dy1gjIam1MUmXB1jdgCtA?si=hEkzw0lqQx2HU8KGtLY8lg"
-                target="_blank"><img src="./public/
-images/spotify.png" alt="Spotify" /></a>
-            <a href="https://br.linkedin.com/in/nando-mendes-9b1394261?trk=people-guest_people_search-card"
-                target="_blank">
-                <img src="./public/
-images/linkedin.png" alt="LinkedIn" />
+                target="_blank"><img src="../../../public/images/spotify.png" alt="Spotify" /></a>
+            <a href="https://br.linkedin.com/in/nando-mendes-9b1394261?trk=people-guest_people_search-card" target="_blank">
+      <img src="../../../public/images/linkedin.png" alt="LinkedIn" />
         </div>
     </footer>
 </body>
