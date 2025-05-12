@@ -245,3 +245,43 @@
   font-size: 28px;
   margin: 40px 0 20px;
 }
+
+/* ===== Página Inicial: restaurando proporções originais ===== */
+
+.container {
+  max-width: 800px;    /* reduz a largura total para centralizar melhor o conteúdo */
+  padding: 20px;       /* diminui o espaçamento interno para ficar mais compacto */
+}
+
+.header .logo {
+  height: 50px;        /* tamanho do logo conforme antes */
+}
+
+.apresentacao {
+  gap: 20px;           /* reduz o espaçamento entre foto e texto */
+}
+
+.foto-perfil {
+  max-width: 250px;    /* foto menor e mais equilibrada */
+}
+
+.video-container {
+  width: 100%;
+  max-width: 560px;    /* limite proporcional ao embed de 16:9 */
+  margin: 0 auto 40px; /* centraliza e separa do formulário */
+}
+
+.contato-container {
+  max-width: 400px;    /* formulário mais estreito */
+  margin: 0 auto;      /* centraliza horizontalmente */
+}
+
+.formulario-contato input,
+.formulario-contato textarea,
+.formulario-contato button {
+  font-size: 14px;     /* reduz fonte para caber melhor no espaço */
+}
+
+footer .social-icons img {
+  height: 28px;        /* ícones um pouco menores */
+}
