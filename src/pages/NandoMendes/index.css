@@ -1,4 +1,4 @@
-/* Estilos da página inicial Nando Mendes */
+/* Estilos principais da página Nando Mendes */
 
 .header {
   background-color: #1e4b91;
@@ -6,23 +6,35 @@
 
 .video-destaque h2,
 .texto-apresentacao h2,
-.contato h2 {
+.contato h2,
+.secao-musica h2,
+.titulo-galeria,
+.conteudo-livro h2 {
   color: #1e4b91;
 }
 
 .footer {
   background-color: #1e4b91;
+  color: white;
+  padding: 20px;
+  text-align: center;
 }
 
-.formulario-contato button {
-  background-color: #1e4b91;
+.social-icons img {
+  height: 32px;
+  filter: brightness(0) invert(1);
+  transition: transform 0.3s ease;
+}
+.social-icons img:hover {
+  transform: scale(1.1);
+  filter: brightness(0) invert(0.7);
 }
 
-.formulario-contato button:hover {
-  background-color: #183e7a;
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px;
 }
-
-
 
 .nav-container {
   display: flex;
@@ -41,21 +53,13 @@
   gap: 20px;
   padding: 0;
 }
-
 .menu a {
   text-decoration: none;
   color: white;
   font-weight: bold;
 }
-
 .menu a:hover {
   text-decoration: underline;
-}
-
-.container {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 40px 20px;
 }
 
 .apresentacao {
@@ -65,32 +69,27 @@
   flex-wrap: wrap;
   margin-bottom: 60px;
 }
-
 .foto-perfil {
   max-width: 350px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
-
 .texto-apresentacao {
   flex: 1;
 }
 
 .video-destaque h2 {
-  margin-bottom: 80px;
-  color: #0d1e40;
+  margin-bottom: 10px;
 }
-
-
-.video-container {
+.video-destaque .video-container {
   position: relative;
   padding-bottom: 56.25%;
   height: 0;
   overflow: hidden;
+  margin-bottom: 40px;
   border-radius: 12px;
   box-shadow: 0 0 8px rgba(0,0,0,0.1);
 }
-
 .video-container iframe {
   position: absolute;
   top: 0;
@@ -99,55 +98,28 @@
   height: 100%;
 }
 
-.footer {
-  background-color: #1e4b91;
-  color: white;
-  padding: 20px;
-  text-align: center;
-}
-
-.social-icons img {
-  height: 32px;
-  filter: brightness(0) invert(1); /* isso deixa o ícone branco */
-  transition: transform 0.3s ease;
-}
-
-.social-icons img:hover {
-  transform: scale(1.1);
-  filter: brightness(0) invert(0.7); /* leve efeito hover */
-}
-
 .contato {
   background-color: #1e4b91;
   padding: 60px 20px;
   text-align: center;
+  margin-top: 40px;
 }
-
-
-.contato {
-  background-color: #1e4b91;
-  padding: 60px 20px;
-  text-align: center;
-   margin-top: 40px;
-}
-
 .contato h2 {
-  color: #ffffff;
+  color: white;
   margin-bottom: 30px;
 }
-
-
 .contato-container {
   max-width: 500px;
   margin: 0 auto;
 }
-
 .formulario-contato {
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
-
+.formulario-contato label {
+  color: white;
+}
 .formulario-contato input,
 .formulario-contato textarea {
   padding: 12px;
@@ -157,160 +129,6 @@
   width: 100%;
   box-sizing: border-box;
 }
-
-.formulario-contato button {
-  background-color: #f4f4f5;
-  color: #1e4b91;
-  padding: 12px;
-  border: none;
-  border-radius: 6px;
-  font-size: 16px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.formulario-contato button:hover {
-  background-color: #1e4b91;
-}
-.formulario-contato label {
-  color: white;
-}
-.secao-musica {
-  margin: 40px 0;
-  padding: 20px;
-  background-color: #f6f8fb;
-  border-radius: 10px;
-  box-shadow: 0 0 8px rgba(0,0,0,0.05);
-}
-
-.secao-musica h2 {
-  color: #1e4b91;
-  margin-bottom: 10px;
-}
-.layout-page {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-.layout-page main {
-  flex: 1;
-}
-
-.livro {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 40px;
-  margin-top: 60px;
-  align-items: center;
-  justify-content: center;
-}
-
-.imagem-livro {
-  max-width: 350px;
-  border-radius: 10px;
-  box-shadow: 0 0 8px rgba(0,0,0,0.1);
-}
-
-.conteudo-livro {
-  max-width: 500px;
-}
-
-.conteudo-livro h2 {
-  color: #1e4b91;
-  margin-bottom: 20px;
-}
-
-.conteudo-livro p {
-  margin-bottom: 12px;
-  line-height: 1.6;
-  color: #333;
-}
-
-.botao-livro {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 12px 24px;
-  background-color: #1e4b91;
-  color: white;
-  font-weight: bold;
-  text-decoration: none;
-  border-radius: 6px;
-  transition: background-color 0.3s ease;
-}
-
-.botao-livro:hover {
-  background-color: #1e4b91;
-}
-
-.bandeira {
-  width: 60px;
-  height: auto;
-  margin-bottom: 10px;
-  border-radius: 0;
-}
-
-.card-horizontal {
-  display: flex;
-  align-items: center;
-  gap: 30px;
-  background-color: #f6f8fb;
-  border-radius: 10px;
-  margin: 30px 0;
-  padding: 20px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.05);
-  flex-wrap: wrap;
-}
-
-.imagem-horizontal {
-  width: 320px;
-  height: auto;
-  border-radius: 10px;
-  object-fit: cover;
-}
-
-.texto-horizontal {
-  flex: 1;
-  min-width: 250px;
-}
-
-.texto-horizontal h3 {
-  color: #1e4b91;
-  margin: 10px 0;
-}
-
-.texto-horizontal p {
-  color: #333;
-  line-height: 1.6;
-}
-
-.bandeira-inline {
-  width: 24px;
-  height: auto;
-  margin-right: 10px;
-  vertical-align: middle;
-}
-
-.titulo-galeria {
-  text-align: center;
-  font-size: 28px;
-  color: #1e4b91; /* mesma cor da logo */
-  margin: 40px 0 20px;
-}
-
-/* Ajusta o espaçamento do vídeo */
-.video-destaque h2 {
-  margin-bottom: 10px;
-}
-
-/* Adiciona margem menor entre vídeo e título */
-.video-destaque .video-container {
-  margin-top: 0;
-  margin-bottom: 40px;
-}
-
-/* Botão com efeito ao passar o mouse */
 .formulario-contato button {
   background-color: white;
   color: #1e4b91;
@@ -322,9 +140,108 @@
   transition: all 0.3s ease;
   cursor: pointer;
 }
-
 .formulario-contato button:hover {
   background-color: #1e4b91;
   color: white;
-  box-shadow: 0 0 0 3px white; /* destaque branco ao redor */
+  box-shadow: 0 0 0 3px white;
+}
+
+.secao-musica {
+  margin: 40px 0;
+  padding: 20px;
+  background-color: #f6f8fb;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.05);
+}
+
+.livro, .curso {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-top: 60px;
+  align-items: center;
+  justify-content: center;
+}
+.imagem-livro, .imagem-curso {
+  max-width: 350px;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+.conteudo-livro, .conteudo-curso {
+  max-width: 500px;
+}
+.conteudo-livro p, .conteudo-curso p {
+  margin-bottom: 12px;
+  line-height: 1.6;
+  color: #333;
+}
+.botao-livro, .botao-curso {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  background-color: #1e4b91;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+.botao-livro:hover, .botao-curso:hover {
+  background-color: #183e7a;
+}
+
+.layout-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.layout-page main {
+  flex: 1;
+}
+
+/* GALERIA */
+.card-horizontal {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  background-color: #f6f8fb;
+  border-radius: 10px;
+  margin: 30px 0;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  flex-wrap: wrap;
+}
+.imagem-horizontal {
+  width: 320px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.texto-horizontal {
+  flex: 1;
+  min-width: 250px;
+}
+.texto-horizontal h3 {
+  color: #1e4b91;
+  margin: 10px 0;
+}
+.texto-horizontal p {
+  color: #333;
+  line-height: 1.6;
+}
+.bandeira {
+  width: 60px;
+  height: auto;
+  margin-bottom: 10px;
+}
+.bandeira-inline {
+  width: 24px;
+  height: auto;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+.titulo-galeria {
+  text-align: center;
+  font-size: 28px;
+  margin: 40px 0 20px;
 }
